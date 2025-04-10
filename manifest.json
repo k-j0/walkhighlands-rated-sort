@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+    "name": "walkhighlands-rated-sort",
+    "version": "1.0",
+    "description": "Allows to sort results returned by https://www.walkhighlands.co.uk/walk-search.php",
+    "content_scripts": [
+        {
+            "matches": ["https://www.walkhighlands.co.uk/walk-search.php"],
+            "js": ["main.js"]
+        }
+    ]
+}
