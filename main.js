@@ -10,7 +10,6 @@ if (table) {
         a.remove();
         const loadingIndicator = document.createTextNode(" (...)");
         header.cells[0].appendChild(loadingIndicator);
-        done = true;
         const tbody = [...table.childNodes].find(node => node.tagName === 'TBODY');
         const domParser = new DOMParser;
         await Promise.all([...tbody.rows].map(async row => {
